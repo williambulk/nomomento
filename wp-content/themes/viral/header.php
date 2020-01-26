@@ -82,7 +82,6 @@
 				</div>
 				<?php } ?>
 				<div class="vl-header-ads">
-					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 					<!-- No Momento Inicial -->
 					<ins class="adsbygoogle"
 					     style="display:inline-block;width:728px;height:90px"
@@ -106,7 +105,18 @@
 					) 
 				); 
 			?>
-		</nav><!-- #vl-site-navigation -->
+		</nav>
+		<!-- #vl-site-navigation desktop -->
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-6833961077444956"
+			data-ad-slot="9556906185"
+			data-ad-format="auto"
+			data-full-width-responsive="true">
+		</ins>
+		<script>
+		     (adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
 	</header><!-- #vl-masthead -->
 
 	<div id="vl-content" class="vl-site-content">

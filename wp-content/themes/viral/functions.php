@@ -222,14 +222,13 @@ function viral_admin_scripts() {
 }
 add_action( 'admin_enqueue_scripts', 'viral_admin_scripts' );
 
-//Insert ads after second paragraph of single post content.
+//Insert ads after third paragraph of single post content.
  
 add_filter( 'the_content', 'prefix_insert_post_ads' );
  
 function prefix_insert_post_ads( $content ) {
      
     $ad_code = '<div style="margin-bottom:30px">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins class="adsbygoogle"
 	     style="display:block"
 	     data-ad-client="ca-pub-6833961077444956"
@@ -242,7 +241,7 @@ function prefix_insert_post_ads( $content ) {
 	</div>';
  
     if ( is_single() && ! is_admin() ) {
-        return prefix_insert_after_paragraph( $ad_code, 2, $content );
+        return prefix_insert_after_paragraph( $ad_code, 3, $content );
     }
      
     return $content;
