@@ -265,6 +265,8 @@ h6 {
 h1{
 	font-size: 30px;
 	margin-bottom: 15px;
+	font-weight: bold;
+	color: #0078af;
 }
 
 h2{
@@ -275,6 +277,8 @@ h2{
 h3{
 	font-size: 24px;
 	margin-bottom: 15px;
+	font-weight: bold;
+	color: #0078af;
 }
 
 h4{
@@ -356,6 +360,10 @@ big {
 
 .mb30 {
 	margin-bottom: 30px;
+}
+
+.mb50 {
+	margin-bottom: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -970,6 +978,10 @@ a:active {
 .vl-category_block .vl-post-thumb{
 	float: left;
 	width: 80px;
+}
+
+.vl-post-thumb h3 {
+	color: #fff;
 }
 
 .vl-category_block .vl-post-content{
