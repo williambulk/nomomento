@@ -21,16 +21,6 @@ jQuery(function($){
 	    }
 	});
 
-	$('.vl-toggle-menu').click(function(){
-  		$('.vl-main-navigation .vl-menu').slideToggle();
-    });
-
-    $('.vl-menu > ul').superfish({
-		delay:       500,                            
-		animation:   {opacity:'show',height:'show'},  
-		speed:       'fast'                         
-	});
-
 	$('#primary, #secondary').theiaStickySidebar({
 		additionalMarginTop: 20,
 		additionalMarginBottom : 20

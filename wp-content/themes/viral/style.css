@@ -348,6 +348,13 @@ big {
 }
 
 /*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+.mb30 {
+	margin-bottom: 30px;
+}
+
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
@@ -2457,15 +2464,11 @@ object {
 	}
 
 	.vl-main-navigation .vl-menu{
-		display: none;
-		background: #FFF;
+		color: #FFF;
 		float: none;
-		position: absolute;
-		top: 100%;
 		left: 0;
 		right: 0;
 		text-align: center;
-		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 	}
 
 	.vl-main-navigation li{
@@ -2482,7 +2485,7 @@ object {
 	}
 
 	.vl-main-navigation a{
-		color: #0E0E0E;
+		color: #FFF;
 	}
 
 	.vl-toggle-menu{

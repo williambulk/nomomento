@@ -9,6 +9,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 
 		<header class="vl-main-header">
+			<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); ?>
+			<img class="mb30" src="<?php echo $featured_img_url; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
 			<?php the_title( '<h1>', '</h1>' ); ?>
 		</header><!-- .entry-header -->
 

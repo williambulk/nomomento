@@ -96,8 +96,7 @@
 			</div>
 		</div>
 
-		<nav id="vl-site-navigation" class="vl-main-navigation">
-		<div class="vl-toggle-menu"><span></span></div>
+		<nav id="vl-site-navigation" class="vl-main-navigation desktop-only">
 			<?php wp_nav_menu( 
 					array( 
 					'theme_location' => 'primary', 
