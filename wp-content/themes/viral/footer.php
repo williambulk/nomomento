@@ -35,7 +35,7 @@
 	<div class="vl-bottom-footer">
 		<div class="vl-container">
 			<div class="vl-site-info">
-				No Momento &copy; <?php echo date('Y'); ?>
+				No Momento &copy; <?php echo date('Y'); ?> | <a href="https://nomomento.net/politica-de-privacidade" target="blank">Política de Privacidade</a>
 			</div>
 		</div>
 	</div>
