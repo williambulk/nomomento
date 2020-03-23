@@ -25,45 +25,40 @@
 	<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/819fb9c2195c26d7d28b1b82c93b9135_1.js" async></script>
 	<div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-6833961077444956",
-              enable_page_level_ads: true
-         });
-    </script>
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="vl-page">
 	<header id="vl-masthead" class="vl-site-header">
 		<div class="vl-top-header desktop-only">
 			<div class="vl-container clearfix">
 				<div class="vl-top-left-header">
-					<?php 
-					/*
-					* Left Header Hook
-					* @hooked - viral_show_date - 10
-					* @hooked - viral_header_text - 10
-					* @hooked - viral_top_menu - 10
-					*/
-					do_action('viral_left_header_content') ?>
+					<?php do_action('viral_left_header_content') ?>
 				</div>
 
 				<div class="vl-top-right-header">
-					<?php 
-					/*
-					* Right Header Hook
-					* @hooked - viral_social_links - 10
-					*/
-					do_action('viral_right_header_content') ?>
+					<?php do_action('viral_right_header_content') ?>
 				</div>
 			</div>
 		</div>
 
-		<div class="vl-header">
+		<div class="vl-header pdm0">
 			<div class="vl-container clearfix">
+				<div class="adtop mobile-only mb30">
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- no momento posts -->
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-client="ca-pub-6833961077444956"
+					     data-ad-slot="9424397759"
+					     data-ad-format="auto"
+					     data-full-width-responsive="true"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
 				<div id="vl-site-branding">
 					<?php 
 					if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) :
@@ -76,7 +71,7 @@
 						<?php endif; ?>
 						<p class="vl-site-description"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></p>
 					<?php endif; ?>
-				</div><!-- .site-branding -->
+				</div>
 
 				<?php if(is_active_sidebar('viral-header-ads')){ ?> 
 				<div class="vl-header-ads">
@@ -84,14 +79,7 @@
 				</div>
 				<?php } ?>
 				<div class="vl-header-ads">
-					<!-- No Momento Inicial -->
-					<ins class="adsbygoogle"
-					     style="display:inline-block;width:728px;height:90px"
-					     data-ad-client="ca-pub-6833961077444956"
-					     data-ad-slot="8790425907"></ins>
-					<script>
-					     (adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
+					
 				</div>
 				<?php ?>
 			</div>
@@ -108,17 +96,6 @@
 				); 
 			?>
 		</nav>
-		<!-- #vl-site-navigation desktop -->
-		<ins class="adsbygoogle"
-			style="display:block"
-			data-ad-client="ca-pub-6833961077444956"
-			data-ad-slot="9556906185"
-			data-ad-format="auto"
-			data-full-width-responsive="true">
-		</ins>
-		<script>
-		     (adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</header><!-- #vl-masthead -->
+	</header>
 
 	<div id="vl-content" class="vl-site-content">

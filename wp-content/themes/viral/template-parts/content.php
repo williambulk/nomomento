@@ -1,10 +1,3 @@
-<?php
-/**
- * @package Viral
- */
-
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('vl-archive-post'); ?>>
 	<?php if ( 'post' == get_post_type() ) : ?>
 	<div class="entry-meta vl-post-info">

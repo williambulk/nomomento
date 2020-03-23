@@ -1,10 +1,4 @@
-<?php
-/**
- * The main template file.
- * @package Viral
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <div class="vl-container">
 

@@ -1,9 +1,4 @@
 <?php
-/**
- * Viral functions and definitions.
- *
- * @package Viral
- */
 
 if ( ! function_exists( 'viral_setup' ) ) :
 
@@ -213,60 +208,6 @@ function viral_scripts() {
 add_action( 'wp_enqueue_scripts', 'viral_scripts' );
 
 /**
- * Enqueue admin scripts and styles.
- */
-function viral_admin_scripts() {
-	wp_enqueue_media();
-	wp_enqueue_script( 'viral-admin-scripts', get_template_directory_uri() . '/inc/js/admin-scripts.js', array('jquery'), '2016427', true );
-	wp_enqueue_style( 'viral-admin-style', get_template_directory_uri() . '/inc/css/admin-style.css' );
-}
-add_action( 'admin_enqueue_scripts', 'viral_admin_scripts' );
-
-//Insert ads after third paragraph of single post content.
- 
-add_filter( 'the_content', 'prefix_insert_post_ads' );
- 
-function prefix_insert_post_ads( $content ) {
-     
-    $ad_code = '<div style="margin-bottom:30px">
-	<ins class="adsbygoogle"
-	     style="display:block"
-	     data-ad-client="ca-pub-6833961077444956"
-	     data-ad-slot="9556906185"
-	     data-ad-format="auto"
-	     data-full-width-responsive="true"></ins>
-	<script>
-	     (adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-	</div>';
- 
-    if ( is_single() && ! is_admin() ) {
-        return prefix_insert_after_paragraph( $ad_code, 3, $content );
-    }
-     
-    return $content;
-}
-  
-// Parent Function that makes the magic happen
-  
-function prefix_insert_after_paragraph( $insertion, $paragraph_id, $content ) {
-    $closing_p = '</p>';
-    $paragraphs = explode( $closing_p, $content );
-    foreach ($paragraphs as $index => $paragraph) {
- 
-        if ( trim( $paragraph ) ) {
-            $paragraphs[$index] .= $closing_p;
-        }
- 
-        if ( $paragraph_id == $index + 1 ) {
-            $paragraphs[$index] .= $insertion;
-        }
-    }
-     
-    return implode( '', $paragraphs );
-}
-
-/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
@@ -304,12 +245,12 @@ require get_template_directory() . '/inc/importer.php';
 /**
  * RSS refresh 
  */
-function myfeed_request( $qv ) {
-    if ( isset( $qv['feed'] ) && !isset( $qv['post_type'] ) ) {
-    $qv['post_type'] = array( 'post' );
-    }
-    return $qv;
-}
-add_filter( 'request', 'myfeed_request' );
+// function myfeed_request( $qv ) {
+//     if ( isset( $qv['feed'] ) && !isset( $qv['post_type'] ) ) {
+//     $qv['post_type'] = array( 'post' );
+//     }
+//     return $qv;
+// }
+// add_filter( 'request', 'myfeed_request' );
 
-add_filter('wp_feed_cache_transient_lifetime', create_function('', 'return 60;'));
+// add_filter('wp_feed_cache_transient_lifetime', create_function('', 'return 60;'));

@@ -22,7 +22,7 @@
 /** O nome do banco de dados do WordPress */
 define( 'WP_MEMORY_LIMIT', '256M' );
 
-define('DB_NAME', 'nomomento');
+define('DB_NAME', 'nomomento_enq');
 
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');
@@ -69,7 +69,7 @@ define('NONCE_SALT',       '@`s+I-IX5/)w[8p:R:h6ai Xm)}}5h8P-l9MsDPNC)vY)J;Q!I/s
  * Você pode ter várias instalações em um único banco de dados se você der
  * um prefixo único para cada um. Somente números, letras e sublinhados!
  */
-$table_prefix = 'wp_';
+$table_prefix = 'enquetes_';
 
 /**
  * Para desenvolvedores: Modo de debug do WordPress.
