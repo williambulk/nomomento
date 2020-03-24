@@ -29,6 +29,7 @@ get_header(); ?>
 				</script>
 			</div>
 			<div class="mb30">
+				<?php global $wp; ?>
 				<h3>// COMENTÁRIOS:</h3>
 				<div class="fb-comments" data-href="<?php echo home_url($wp->request); ?>" data-width="100%"></div>
 			</div>

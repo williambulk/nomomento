@@ -22,9 +22,9 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="<?php bloginfo('template_url'); ?>/images/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/819fb9c2195c26d7d28b1b82c93b9135_1.js" async></script>
+	<!-- <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/819fb9c2195c26d7d28b1b82c93b9135_1.js" async></script> -->
 	<div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0"></script>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"></script>
 <?php wp_head(); ?>
 </head>
 
@@ -44,21 +44,8 @@
 			</div>
 		</div>
 
-		<div class="vl-header pdm0">
+		<div class="vl-header">
 			<div class="vl-container clearfix">
-				<div class="adtop mobile-only mb30">
-					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- no momento posts -->
-					<ins class="adsbygoogle"
-					     style="display:block"
-					     data-ad-client="ca-pub-6833961077444956"
-					     data-ad-slot="9424397759"
-					     data-ad-format="auto"
-					     data-full-width-responsive="true"></ins>
-					<script>
-					     (adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</div>
 				<div id="vl-site-branding">
 					<?php 
 					if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) :
