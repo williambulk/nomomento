@@ -245,12 +245,12 @@ require get_template_directory() . '/inc/importer.php';
 /**
  * RSS refresh 
  */
-// function myfeed_request( $qv ) {
-//     if ( isset( $qv['feed'] ) && !isset( $qv['post_type'] ) ) {
-//     $qv['post_type'] = array( 'post' );
-//     }
-//     return $qv;
-// }
-// add_filter( 'request', 'myfeed_request' );
+function myfeed_request( $qv ) {
+    if ( isset( $qv['feed'] ) && !isset( $qv['post_type'] ) ) {
+    $qv['post_type'] = array( 'post' );
+    }
+    return $qv;
+}
+add_filter( 'request', 'myfeed_request' );
 
-// add_filter('wp_feed_cache_transient_lifetime', create_function('', 'return 60;'));
+add_filter('wp_feed_cache_transient_lifetime', create_function('', 'return 60;'));

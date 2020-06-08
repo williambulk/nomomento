@@ -21,9 +21,10 @@
 	<meta name="msapplication-TileImage" content="<?php bloginfo('template_url'); ?>/images/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<script charset="UTF-8" src="//web.webpushs.com/js/push/819fb9c2195c26d7d28b1b82c93b9135_1.js" async></script>
-	
-	<div id="fb-root"></div>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- <div id="fb-root"></div>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"></script>
+	-->
 <?php wp_head(); ?>
 </head>
 
@@ -43,7 +44,21 @@
 			</div>
 		</div>
 
+		<div class="vl-container">
+			<!-- Página das enquetes -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-6833961077444956"
+			     data-ad-slot="4036653715"
+			     data-ad-format="auto"
+			     data-full-width-responsive="true"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+
 		<div class="vl-header">
+
 			<div class="vl-container clearfix">
 				<div id="vl-site-branding">
 					<?php 
@@ -68,6 +83,7 @@
 					
 				</div>
 				<?php ?>
+
 			</div>
 		</div>
 

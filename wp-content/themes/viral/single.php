@@ -15,24 +15,13 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+			<!--
 			<div class="mb30">
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- no momento posts -->
-				<ins class="adsbygoogle"
-				     style="display:block"
-				     data-ad-client="ca-pub-6833961077444956"
-				     data-ad-slot="9424397759"
-				     data-ad-format="auto"
-				     data-full-width-responsive="true"></ins>
-				<script>
-				     (adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
-			<div class="mb30">
-				<?php global $wp; ?>
+				<?php // global $wp; ?>
 				<h3>// COMENTÁRIOS:</h3>
-				<div class="fb-comments" data-href="<?php echo home_url($wp->request); ?>" data-width="100%"></div>
+				<div class="fb-comments" data-href="<?php //echo home_url($wp->request); ?>" data-width="100%"></div>
 			</div>
+			-->
 
 		<?php endwhile; // End of the loop. ?>
 
