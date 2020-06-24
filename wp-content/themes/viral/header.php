@@ -22,14 +22,12 @@
 	<meta name="theme-color" content="#ffffff">
 	<script charset="UTF-8" src="//web.webpushs.com/js/push/819fb9c2195c26d7d28b1b82c93b9135_1.js" async></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- <div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"></script>
-	-->
+	<script id="navegg" type="text/javascript" src="https://tag.navdmp.com/tm44561.js"></script>
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-
+<script src="//cdn.simpleads.com.br/v2/s357966/p1256797/show.js" type="text/javascript"></script>
 <div id="vl-page">
 	<header id="vl-masthead" class="vl-site-header">
 		<div class="vl-top-header desktop-only">
